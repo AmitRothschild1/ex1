@@ -15,12 +15,12 @@ int main() {
   Print the bit in this position. */
   int numTask1;
   int posTask1;
-  printf("please enter a number:\n");
+  printf("Please enter a number:\n");
   scanf("%d",&numTask1);
-  printf("please enter the position:\n");
+  printf("Please enter a position:\n");
   scanf("%d",&posTask1);
   int bitTask1 = (numTask1 >> posTask1)&1;
-  printf("The bit position %d of number %d is: %d\n",posTask1,numTask1,bitTask1);
+  printf("The bit in position %d of number %d is: %d\n",posTask1,numTask1,bitTask1);
 
   // Set bit
   printf("\nSet bit:\n");
@@ -31,9 +31,9 @@ int main() {
   Print the output */
   int numTask2;
   int posTask2;
-  printf("please enter a number:\n");
+  printf("Please enter a number:\n");
   scanf("%d",&numTask2);
-  printf("please enter the position:\n");
+  printf("Please enter a position:\n");
   scanf("%d",&posTask2);
   int numberWith1Task2 = numTask2 | (1 << posTask2);
   int numberWith0Task2 = numTask2 & ~(1 << posTask2);
@@ -49,7 +49,7 @@ int main() {
   int posTask3;
   printf("Please enter a number:\n");
   scanf("%d", &numTask3);
-  printf("Please enter the position:\n");
+  printf("Please enter a position:\n");
   scanf("%d", &posTask3);
   int bitTask3 = (numTask3 >> posTask3)&1;
   int newNumBitoffTask3 = (numTask3 & ~(1<<posTask3)) * bitTask3;
@@ -78,7 +78,7 @@ int main() {
   printf("Please enter the second number (octal):\n");
   scanf("%o", &octalNum2);
   int hexSum = octalNum1 + octalNum2;
-  printf("The sum in hexadecimal: %x\n", hexSum);
+  printf("The sum in hexadecimal: %X\n", hexSum);
   int thirdBitNum = (hexSum >> 3)&1;
   int fifthBitNum = (hexSum >> 5)&1;
   int sevenBitNum = (hexSum >> 7)&1;
